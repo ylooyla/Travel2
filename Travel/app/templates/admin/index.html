@@ -1,0 +1,51 @@
+{% extends 'admin/admin.html' %}
+
+{% block content %}
+        <!--内容-->
+        <section class="content-header">
+            <h1>三迁旅行管理系统</h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-dashboard"></i> 首页</a></li>
+                <li class="active">控制面板</li>
+            </ol>
+        </section>
+        <section class="content" id="showcontent">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">公司简介</h3>
+                        </div>
+                        <div class="box-body">
+                            <p>
+                                <b>北京三迁教育咨询有限公司</b>是一家致力于培养优秀的IT人才的公司。三迁教育教师成员拥有知名企业多年实战经验，三迁教育能时刻获取一线最新的教育信息。三迁教育面对面授课，随时提问，随时解疑。
+                            </p>
+                            <img src="{{ url_for('static',filename='base/images/logo.png') }}">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">三迁故事</h3>
+                        </div>
+                        <div class="box-body">
+                            <p>孔夫子有言——“有教无类”、“因材施教”，每一位学子都有接受教育的权利，无论是传统的教育，亦或是课外延伸的各类教育、每一位学子都能成才，只需找到自己的长处。基于此，三迁教育严格要求自身：培养有灵魂的工程师。三迁科技十分注重师生交流，针对不同性格学生实行不同培养模式。从而实现三迁科技的理念：培养的不仅仅是会敲代码的码农，而是一位有自己思想的IT工程师，使学子拥有自我学习的能力，具备自我驱动、自我思考的特质。无论新知识如何暗潮涌动，学子都能快速掌握，从而做IT行业的弄潮儿。</p>
+                            <p>仿照阿基米德的名言“给我一个支点，我就能撬起地球”，三迁科技的口号之一是“给我一项技能，我就能守住幸福”，同时也是三迁教育对各位学子的祝福。三迁教育的愿望，就是培养学子们有足够的能力去守护幸福。当华灯初上、万家灯火时，有一盏灯是为你而亮；当父母蹒跚、难觅黑发时，你能让他们安度晚年；当嘤嘤学语、孩儿蹒跚时，你能给他（她）一个美好的成长；当时代变迁、惊涛骇浪时，你能紧跟时代步伐。</p>
+                            <p>最后，三迁教育全体董事祝愿莘莘学子，并以此督警三迁科技全体职工：任凭山岳崩颓、风云变幻，我们的学子终能在社会中有一席之地，在生活中有幸福感，在人生中有归属感。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--内容-->
+{% endblock %}
+
+{% block js %}
+    <script>
+    $(document).ready(function(){
+        $("#g-1").addClass("active");
+        $("#g-1-1").addClass("active");
+    });
+</script>
+{% endblock %}
